@@ -9,4 +9,4 @@
 <!-- Bonus -->
 <!-- Nel stampare la ul in html, si potrebbe inserire anche un tag img, la descrizione e la lista dei tag -->
 <!-- Spostiamo l’array dei post in un file separato da importare poi dentro il controller -->
-Creare una rotta POST per aggiungere i post tramite Postman
+<!-- Creare una rotta POST per aggiungere i post tramite Postman -->

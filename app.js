@@ -13,6 +13,7 @@ app.get("/", (req, res) =>{
 })
 
 app.get("/posts", blog.index)
+app.post("/posts", blog.add)
 
 app.listen(port, () => {
     console.log(`Server avviato su http://localhost:${port}`);

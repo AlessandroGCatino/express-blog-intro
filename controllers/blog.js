@@ -1,4 +1,4 @@
-const {readJSON} = require ("../utils.js")
+const {readJSON, writeJSON} = require ("../utils.js")
 
 module.exports = {
     index: (req, res) => {
@@ -24,5 +24,10 @@ module.exports = {
                 res.json(posts)
             }
         })
+    },
+    add: (req, res) => {
+        const posts = readJSON("posts")
+        writeJSON("posts", [...posts, req.body])
+        res.send("Nuovo post inserito")
     }
 }
