@@ -11,7 +11,7 @@ module.exports = {
                 `
                 posts.forEach(({title, content, cover, tags}) => {
                     outputHTML += `<div>
-                                <h4>${title}</h4>
+                                <h2>${title}</h2>
                                 <img src="/${cover}" alt="${title}" style="width:450px;"/>
                                 <p>${content}</p>
                                 <ul style="display: flex; justify-content: center; gap: 50px;list-style-type: none;">
