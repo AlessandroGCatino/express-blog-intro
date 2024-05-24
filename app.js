@@ -9,7 +9,9 @@ app.use(express.json());
 
 
 app.get("/", (req, res) =>{
-    res.send("<h1>Benvenuto nel mio blog!</h1>")
+    res.send(`<h1>Benvenuto nel mio blog!</h1>
+                <a href="/posts"> Visualizza i miei post!</a>
+                `)
 })
 
 app.get("/posts", blog.index)

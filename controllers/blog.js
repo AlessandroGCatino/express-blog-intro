@@ -5,10 +5,13 @@ module.exports = {
         const posts = readJSON("posts")
         res.format({
             html: () => {
-                let outputHTML = "<main>"
+                let outputHTML = `<main style="text-align: center;">
+                <h1> Ecco la lista dei miei post</h1>
+                <a href="/">Vuoi tornare alla home?</a>
+                `
                 posts.forEach(({title, content, cover, tags}) => {
-                    outputHTML += `<div style="text-align: center;">
-                                <h1>${title}</h1>
+                    outputHTML += `<div>
+                                <h4>${title}</h4>
                                 <img src="/${cover}" alt="${title}" style="width:450px;"/>
                                 <p>${content}</p>
                                 <ul style="display: flex; justify-content: center; gap: 50px;list-style-type: none;">
